@@ -139,10 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="complex_figure.cpp" />
     <ClCompile Include="CourseWork.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="complex_figure.h" />
     <ClInclude Include="Figure.h" />
     <ClInclude Include="Triangle.h" />
   </ItemGroup>
