@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="complex_figure.cpp" />
     <ClCompile Include="CourseWork.cpp" />
+    <ClCompile Include="Figure.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>

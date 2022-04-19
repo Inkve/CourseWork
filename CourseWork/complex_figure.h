@@ -3,9 +3,6 @@
 
 class complex_triangle : public Figure {
 protected:
-	int x;
-	int y;
-	int a;
 	triangle* top;
 	triangle* left;
 	triangle* right;

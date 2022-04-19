@@ -1,10 +1,6 @@
 #include "Triangle.h"
 
-triangle::triangle(int x_, int y_, int a_) {
-	x = x_;
-	y = y_;
-	a = a_;
-}
+triangle::triangle(int x_, int y_, int a_) : Figure(x_, y_, a_){};
 
 void triangle::show() {
 	int x_1 = x;
