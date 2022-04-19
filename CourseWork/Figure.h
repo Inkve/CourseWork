@@ -9,5 +9,5 @@ protected:
 	int a;
 public:
 	Figure(int, int, int);
-	virtual void show() = 0;
+	void show();
 };

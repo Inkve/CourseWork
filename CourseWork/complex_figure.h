@@ -9,6 +9,6 @@ protected:
 
 public:
 	complex_triangle(int, int, int);
-	void show() override;
+	void show();
 };
 
