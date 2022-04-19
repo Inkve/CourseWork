@@ -4,7 +4,7 @@
 class triangle : public Figure{
 public:
 	triangle(int, int, int);
-	void show();
+	void show() override;
 };
 
 
