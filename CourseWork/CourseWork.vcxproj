@@ -142,11 +142,13 @@
     <ClCompile Include="complex_figure.cpp" />
     <ClCompile Include="CourseWork.cpp" />
     <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="List.cpp" />
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="complex_figure.h" />
     <ClInclude Include="Figure.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

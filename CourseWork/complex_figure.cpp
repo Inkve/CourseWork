@@ -15,3 +15,17 @@ void complex_triangle::show() {
 	cout << "Нижний правый треугольник" << endl;
 	right->show();
 };
+
+void complex_triangle::hide() {
+	top->hide();
+	left->hide();
+	right->hide();
+};
+
+void complex_triangle::move(int _x, int _y) {
+	this->x = _x;
+	this->y = _y;
+	top->move(x, y);
+	left->move(x - a / 4, y / 2);
+	right->move(x + a / 4, y / 2);
+};

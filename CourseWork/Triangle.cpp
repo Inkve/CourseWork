@@ -13,3 +13,13 @@ void triangle::show() {
 	cout << "Нижняя левая координата: (" << x_2 << ";" << y_2 << ")" << endl;
 	cout << "Нижняя правая координата: (" << x_3 << ";" << y_3 << ")" << endl;
 };
+
+void triangle::hide() {
+};
+
+void triangle::move(int _x, int _y) {
+	this->hide();
+	this->x = _x;
+	this->y = _y;
+	this->show();
+};
