@@ -10,4 +10,11 @@ public:
 	void add(Figure&);
 	void view();
 	void deletion();
+	class Errors {
+	public:
+		string cause;
+		Errors(string _cause) {
+			cause = _cause;
+		};
+	};
 };

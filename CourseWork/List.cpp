@@ -7,6 +7,9 @@ void List::add(Figure& _figure) {
 };
 
 void List::view() {
+	if (list.size() == 0) {
+		throw(Errors("Список пустой!"));
+	};
 	for (auto element : list) {
 		element->show();
 	};

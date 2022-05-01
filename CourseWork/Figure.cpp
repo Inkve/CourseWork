@@ -1,10 +1,22 @@
 #include "Figure.h"
 
-Figure::Figure(int x_, int y_, int a_) {
-	x = x_;
-	y = y_;
-	a = a_;
+Figure::Figure(int _x, int _y, int _a) {
     hwnd = 0;
+    if (_x < 0 || _y < 0) {
+        throw(Errors("Отрицательные начальные координаты!"));
+    };
+    if (_x == 0 || _y == 0) {
+        throw(Errors("Нулевые начальные координаты!"));
+    };
+    if (_a < 0) {
+        throw(Errors("Отрицательная длина треугольника!"));
+    };
+    if (_a == 0) {
+        throw(Errors("Нулевая длина треугольника!"));
+    };
+	x = _x;
+	y = _y;
+	a = _a;
     if ((hwnd = GetConsoleWindow()) == 0){
         throw(Errors("Ошибка получения идентификатора окна!"));
     };
