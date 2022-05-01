@@ -19,4 +19,11 @@ public:
 	virtual void show() = 0;
 	virtual void hide() = 0;
 	virtual void move(int, int) = 0;
+	class Errors {
+	public:
+		string cause;
+		Errors(string _cause) {
+			cause = _cause;
+		};
+	};
 };

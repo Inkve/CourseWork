@@ -7,12 +7,8 @@ complex_triangle::complex_triangle(int x_, int y_, int a_) : Figure(x_, y_, a_) 
 };
 
 void complex_triangle::show() {
-	/*cout << "Это сложный треугольник" << endl;
-	cout << "Верхний треугольник" << endl;*/
 	top->show();
-	/*cout << "Нижний левый треугольник" << endl;*/
 	left->show();
-	/*cout << "Нижний правый треугольник" << endl;*/
 	right->show();
 };
 

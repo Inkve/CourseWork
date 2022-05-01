@@ -9,10 +9,9 @@ void triangle::show() {
 	int y_2 = y + a;
 	int x_3 = x + (a / 2);
 	int y_3 = y + a;
-	/*cout << "Верхняя координата: (" << x_1 << ";" << y_1 << ")" << endl;
-	cout << "Нижняя левая координата: (" << x_2 << ";" << y_2 << ")" << endl;
-	cout << "Нижняя правая координата: (" << x_3 << ";" << y_3 << ")" << endl;*/
-	
+	if (y_1 <= rt.top || x_2 <= rt.left || x_3 >= rt.right || y_3 >= rt.bottom) {
+		throw(Errors("Выход за границы области при рисовании!"));
+	};
 	HPEN pen;
 	pen = CreatePen(PS_SOLID, 3, RGB(0, 128, 0));
 	SelectObject(hdc, pen);
@@ -42,6 +41,9 @@ void triangle::hide() {
 
 void triangle::move(int _x, int _y) {
 	this->hide();
+	if (_x <= rt.left || _x >= rt.right || _y <= rt.top || _y >= rt.bottom) {
+		throw(Errors("Выход за границы области при перемещении!"));
+	};
 	this->x = _x;
 	this->y = _y;
 	this->show();
