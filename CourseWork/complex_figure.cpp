@@ -25,3 +25,5 @@ void complex_triangle::move(int _x, int _y) {
 	left->move(x - a / 4, y + a / 2);
 	right->move(x + a / 4, y + a / 2);
 };
+
+complex_triangle::~complex_triangle() {};

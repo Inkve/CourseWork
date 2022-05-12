@@ -12,5 +12,6 @@ public:
 	void show() override;
 	void hide() override;
 	void move(int, int) override;
+	~complex_triangle();
 };
 

@@ -22,8 +22,14 @@ public:
 	class Errors {
 	public:
 		string cause;
-		Errors(string _cause) {
+		string var;
+		int value1;
+		int value2;
+		Errors(string _cause, string _var, int _value1, int _value2) {
 			cause = _cause;
+			var = _var;
+			value1 = _value1;
+			value2 = _value2;
 		};
 	};
 };

@@ -8,7 +8,7 @@ void List::add(Figure& _figure) {
 
 void List::view() {
 	if (list.size() == 0) {
-		throw(Errors("Список пустой!"));
+		throw(Errors("Список пустой!", "list", NULL, NULL));
 	};
 	for (auto element : list) {
 		element->show();
@@ -17,6 +17,10 @@ void List::view() {
 
 void List::deletion() {
 	list.clear();
+};
+
+List::~List() {
+	this->deletion();
 };
 
 
