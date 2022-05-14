@@ -15,12 +15,12 @@ void List::view() {
 	};
 };
 
-void List::deletion() {
+void List::remove() {
 	list.clear();
 };
 
 List::~List() {
-	this->deletion();
+	this->remove();
 };
 
 

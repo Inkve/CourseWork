@@ -9,7 +9,7 @@ public:
 	List();
 	void add(Figure&);
 	void view();
-	void deletion();
+	void remove();
 	class Errors {
 	public:
 		string cause;

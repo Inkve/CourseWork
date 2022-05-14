@@ -20,7 +20,7 @@ int main()
 		complex_first.move(100, 100);
 		Sleep(3000);
 		second.move(50, 350);
-		figures_list.deletion();
+		figures_list.remove();
 	}
 	catch (Figure::Errors error) {
 		cout << error.cause << endl;
