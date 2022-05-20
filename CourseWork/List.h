@@ -4,7 +4,7 @@
 
 class List {
 protected:
-	list<Figure*> list;
+	list<Figure*> lists;
 public:
 	List();
 	void add(Figure&);

@@ -7,22 +7,23 @@ int main()
 	setlocale(LC_ALL, "");
 	try {
 		List figures_list;
-		complex_triangle complex_first(200, 200, 100);
-		figures_list.add(complex_first);
-		triangle first(100, 100, 100);
+		triangle first(50, 100, 50);
 		figures_list.add(first);
-		triangle second(180, 310, 45);
-		figures_list.add(second);
+		complex_triangle complex_first(350, 25, 200);
+		figures_list.add(complex_first);
 		figures_list.view();
 		Sleep(3000);
-		first.move(300, 150);
+		first.move(250, 30);
+		complex_first.move(150, 50);
 		Sleep(3000);
-		complex_first.move(100, 100);
-		Sleep(3000);
-		second.move(50, 350);
 		figures_list.remove();
+		figures_list.view();
 	}
 	catch (Figure::Errors error) {
+		cout << error.cause << endl;
+		cout << error.var << " : " << error.value1 << " " << error.value2 << endl;
+	}
+	catch (List::Errors error) {
 		cout << error.cause << endl;
 		cout << error.var << " : " << error.value1 << " " << error.value2 << endl;
 	};

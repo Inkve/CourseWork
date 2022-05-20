@@ -3,20 +3,22 @@
 List::List() {};
 
 void List::add(Figure& _figure) {
-	list.push_back(&_figure);
+	lists.push_back(&_figure);
 };
 
 void List::view() {
-	if (list.size() == 0) {
+	if (lists.empty()) {
 		throw(Errors("Список пустой!", "list", NULL, NULL));
-	};
-	for (auto element : list) {
-		element->show();
+	}
+	else {
+		for (auto element : lists) {
+			element->show();
+		};
 	};
 };
 
 void List::remove() {
-	list.clear();
+	lists.clear();
 };
 
 List::~List() {
